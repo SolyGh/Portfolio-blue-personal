@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 
 const Services = () => {
   return (
-    <section id="services" className="py-12 bg-gray-100">
+    <section id="services" className="py-12 bg-transparent">
       <h5 className="text-lg text-gray-600 text-center">What I Offer</h5>
       <h2 className="text-4xl font-bold mb-8 text-center">Services</h2>
 
@@ -82,9 +82,7 @@ const Services = () => {
           <ul className="service__list mt-4 space-y-4">
             <li data-aos="fade-up" className="flex items-center">
               <FaCheck className="service__list-icon text-green-500 mr-2" />
-              <p>
-                I love brainstorming ideas .
-              </p>
+              <p>I love brainstorming ideas .</p>
             </li>
             <li
               data-aos="fade-up"
@@ -105,7 +103,6 @@ const Services = () => {
               <FaCheck className="service__list-icon text-green-500 mr-2" />
               <p>Imaginative and creative approach to content creation.</p>
             </li>
-      
           </ul>
         </article>
       </div>
