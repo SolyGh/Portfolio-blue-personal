@@ -13,7 +13,11 @@ nav {
   display: flex;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
+
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 nav a {
   padding: 0.9rem;

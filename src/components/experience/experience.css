@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .experience__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5,6 +9,58 @@
   justify-content: center;
   align-items: center;
 }
+
+.experience_frontend:hover .exp_heading {
+  color: white !important;
+  background-color: var(--color-primary) !important;
+  border-radius: 10px;
+  padding: 5px;
+  transition:  var(--transition) ;  
+   
+
+  -webkit-transition:  var(--transition) ;
+  -moz-transition:  var(--transition) ;
+  -ms-transition:  var(--transition) ;
+  -o-transition:  var(--transition) ;
+}
+.experience_backend:hover .exp_heading {
+  color: white !important;
+  background-color: var(--color-primary) !important;
+  border-radius: 10px;
+  padding: 5px;
+    transition:  var(--transition) ;  
+
+}
+
+.experience_frontend:hover   h4 {
+  color: var(--color-primary) ;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.experience_frontend:hover small {
+  color:white ;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.experience_backend:hover h4 {
+  color: var(--color-primary) ;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+
+
+
+
 
 .experience__container > div {
   background: var(--color-bg-variant);

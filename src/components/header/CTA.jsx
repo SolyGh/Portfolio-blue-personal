@@ -2,7 +2,7 @@ import React from "react";
 import CV from "../../assets/cv.pdf";
 const CTA = () => {
   return (
-    <div className="cta">
+    <div className="cta flex justify-center items-center gap-2 ">
       <a href={CV} className="btn" download>
         {" "}
         Download CV

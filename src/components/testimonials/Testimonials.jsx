@@ -4,70 +4,53 @@ import AVTR1 from "../../assets/avatar1.jpg";
 import AVTR2 from "../../assets/avatar2.jpg";
 import AVTR3 from "../../assets/avatar3.jpg";
 import AVTR4 from "../../assets/avatar4.jpg";
-// import React { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-cards";
-
-import "./styles.css";
-
-// import required modules
-import { EffectCards } from "swiper/modules";
 
 const testimonialData = [
   {
     avatar: AVTR1,
     name: "Ernest Achiever",
     review:
-      "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
   },
   {
     avatar: AVTR2,
-    name: "Ernest Achiever",
+    name: "Jane Doe",
     review:
-      "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
+      "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper eleifend.",
   },
   {
     avatar: AVTR3,
-    name: "Ernest Achiever",
+    name: "John Smith",
     review:
-      "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
+      "Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi fringilla. Donec non enim vel risus cursus tincidunt.",
   },
   {
     avatar: AVTR4,
-    name: "Ernest Achiever",
+    name: "Alice Johnson",
     review:
-      "Lorem ipsum doloripsum doloripsum doloripsum doloripsum doloripsum doloripsum dolor ipsum doloripsumdoloripsumdoloripsumdoloripsumdoloripsum doloripsum doloripsum doloripsum dolor",
+      "Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
   },
 ];
 
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review from Clients</h5>
+      <h5>What My Clients Say</h5>
       <h2>Testimonials</h2>
 
-      <Swiper
-        className="container testimonials__container"
-        // install Swiper modules
-        effect={"cards"}
-        grabCursor={true}
-        modules={[EffectCards]}
-      >
+      <div className="testimonials__container">
         {testimonialData.map((testimonial, index) => (
-          <SwiperSlide className="testimonial" key={index}>
-            <div className="client__avatar">
-              <img src={testimonial.avatar} alt="" />
+          <div className="testimonial" key={index}>
+            <div className="testimonial__avatar">
+              <img src={testimonial.avatar} alt={testimonial.name} />
             </div>
-
-            <h5 className="client__name">{testimonial.name}</h5>
-            <small className="client__review">{testimonial.review}</small>
-          </SwiperSlide>
+            <div className="testimonial__content">
+              <h5 className="testimonial__name">{testimonial.name}</h5>
+              <p className="testimonial__review">{testimonial.review}</p>
+            </div>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </section>
   );
 };

@@ -13,6 +13,11 @@
 .portfolio__item:hover {
   border-color: var(--color-primary-variant);
   background: transparent;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 .portfolio__item-img {

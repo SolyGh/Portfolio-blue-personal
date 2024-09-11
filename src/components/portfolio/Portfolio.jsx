@@ -1,48 +1,44 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
 
 const portfolioItems = [
   {
-    image: IMG1,
-    title: "Portfolio Item 1",
-    githubLink: "https://github.com",
-    demoLink: "https://dribbble.com/Alien_pixels",
+    image: require("../../assets/WhatsApp Image 2024-09-11 at 01.06.41_4446b13a.jpg"),
+    title: "ZWEB website Builder",
+    githubLink: "https://github.com/SolyGh/graduation-project",
+    demoLink:
+      "https://zagwebbuilder-git-main-m2001saids-projects.vercel.app/en",
   },
   {
-    image: IMG2,
-    title: "Portfolio Item 2",
-    githubLink: "https://github.com",
-    demoLink: "https://dribbble.com/Alien_pixels",
+    image: require("../../assets/real.jpg"),
+    title: "Real estate company website",
+    githubLink: "https://github.com/SolyGh/Real-Estate-soli",
+    demoLink: "https://real-estate-khaki-tau.vercel.app/",
   },
   {
-    image: IMG3,
-    title: "Portfolio Item 3",
-    githubLink: "https://github.com",
-    demoLink: "https://dribbble.com/Alien_pixels",
+    image: require("../../assets/arch.jpg"),
+    title: "Archetecture Soli company website",
+    githubLink: "https://github.com/SolyGh/Architecture-Soli",
+    demoLink: "https://architect-umber.vercel.app/",
   },
   {
-    image: IMG4,
-    title: "Portfolio Item 4",
-    githubLink: "https://github.com",
-    demoLink: "https://dribbble.com/Alien_pixels",
+    image: require("../../assets/finance.jpg"),
+    title: "financial portfolio website",
+    githubLink: "https://github.com/SolyGh/Frontend",
+    demoLink:
+      "https://fiancialpo-git-b7cc2d-ahmedsolimanth57gmail-ahmedsolis-projects.vercel.app/",
   },
   {
-    image: IMG5,
-    title: "Portfolio Item 5",
-    githubLink: "https://github.com",
-    demoLink: "https://dribbble.com/Alien_pixels",
+    image: require("../../assets/shoppify.jpg"),
+    title: "clothes shoppiing website",
+    githubLink: "https://github.com/SolyGh/shopping",
+    demoLink: "https://shpping-hub.vercel.app/://dribbble.com/Alien_pixels",
   },
   {
-    image: IMG6,
-    title: "Portfolio Item 6",
-    githubLink: "https://github.com",
-    demoLink: "https://dribbble.com/Alien_pixels",
+    image: require("../../assets/portf.jpg"),
+    title: "Portfolio website",
+    githubLink: "https://github.com/SolyGh/portfolio-dark",
+    demoLink: "https://portfolio-dark-two.vercel.app/",
   },
 ];
 
@@ -54,9 +50,9 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {portfolioItems.map((item, index) => (
-          <article className="portfolio__item" key={index}>
+          <article className="portfolio__item" key={index} data-aos="fade-up">
             <div className="portfolio__item-image">
-              <img src={item.image} alt="" />
+              <img src={item.image} alt={item.title} />
             </div>
 
             <h3>{item.title}</h3>

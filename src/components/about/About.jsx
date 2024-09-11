@@ -8,12 +8,12 @@ import { FaFolderTree } from "react-icons/fa6";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get to know </h5>
+      <h5>Get to Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="" />
+            <img src={ME} alt="Ahmed Soliman" />
           </div>
         </div>
 
@@ -21,30 +21,30 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FiAward className="about__icon" />
-
-              <h5>Experience</h5>
-              <small>3+Years Working</small>
+              <h5>Education</h5>
+              <small>
+                Bachelor’s degree in Computer and Systems Engineering
+              </small>
             </article>
             <article className="about__card">
               <FaUsers className="about__icon" />
-
-              <h5>Clients</h5>
-
-              <small>300+ Clients Worldwide</small>
+              <h5>Current Focus</h5>
+              <small>
+                Building experience and expanding my professional network
+              </small>
             </article>
             <article className="about__card">
               <FaFolderTree className="about__icon" />
-
               <h5>Projects</h5>
-              <small>80+ completed projects</small>
+              <small>Working on several personal and academic projects</small>
             </article>
           </div>
           <p>
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
-            lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit
+            I recently graduated with a Bachelor’s degree in Computer and
+            Systems Engineering. I’m passionate about front-end development and
+            am eager to apply my skills in creating innovative and user-friendly
+            web applications. My goal is to continue learning, grow my skill
+            set, and build a strong portfolio of projects.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
